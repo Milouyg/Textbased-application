@@ -1,4 +1,3 @@
-# Textbased application: Vluchtelingen verhaal
 # minstens 21 vragen
 # 4 verschillende eindes
 # 5 november af
@@ -22,7 +21,6 @@ Leeftijd_controler()
 
 #region keuzes-------------------------------------------------------------------------------------------------------------------------------
 import time
-import os
 
 answer_A = ["A" , "a"]
 answer_B = ["B" , "b"]
@@ -32,10 +30,12 @@ benodigheden = ("Je kunt alleen kiezen tussen A/a, B/b en C/c.")
 global paspoort
 paspoort = False
 
+play = True
+
 #endregion
 #--------------------------------------------------------------------------------------------------------------------------------------------
 #region begin van het verhaallijn
-
+while play:
 def intro():
     print("""Je bent 16 jaar en werd uitgehuwelijkt aan de 36-jarige Yebar.
     Hij is de machtigste man in je geboorteland en is hoofdmilitair.
@@ -50,7 +50,7 @@ def intro():
     """)
     answer = input(">>> ")
     if answer in answer_A:
-        terug_vechten()
+        terug_vechten
     elif answer in answer_B:
         vluchten()
     else:
@@ -126,12 +126,6 @@ def vechten_met_je_handen():
     Hij kneep je kil dicht en alles werd zwart voor je ogen. 
     Game over!
     """)
-    Speel_opnieuw = input("Wil je het opnieuw spelen? Zoja type 'ja'\n>>> ")
-    if Speel_opnieuw == "ja":
-        os.system("cls")
-        intro()
-    else:
-        exit 
 
 def vaas():
     print(""""Je pakte een vaas dat op je nachtkastje stond en wachtte op hem.
@@ -157,8 +151,9 @@ def vaas():
 
 def Raam_Door_Slaan():
     print("""Je sloeg het raam kapot en klom naar buiten.
-    Toen je op de grond stond, hoorde je Yebar.
-    Je vluchtte zo snel mogelijk weg van je huis.
+    Toen je op de grond stond, hoorde je Yebar zijn auto.
+    Hij parkeerde de auto en liep naar zijn huis toe.
+    Je wachtte tot hij naar binnen was en vluchtte.
     """)
     time.sleep(1)
     print("""Waar vlucht je naartoe?
@@ -258,9 +253,9 @@ def mes_pakken():
     """)
     answer = input(">>> ")
     if answer in answer_A:
-        Niet_neersteken()
-    elif answer in answer_B:
         Neersteken()
+    elif answer in answer_B:
+        Niet_neersteken()
     else:
         print(benodigheden)
         mes_pakken()
@@ -274,12 +269,6 @@ def Niet_neersteken():
     Alles werd zwart voor jouw ogen. Ten minste ben ik nu verlost van dit leven...
     Game over!
     """)
-    Speel_opnieuw = input("Wil je het opnieuw spelen? Zoja type 'ja'\n>>> ")
-    if Speel_opnieuw == "ja":
-        os.system("cls")
-        intro()
-    else:
-        exit 
 #--------------------------------
 
 def Neersteken():
@@ -366,12 +355,6 @@ def gered():
     Ondanks deze traumatische gebeurtenis, keek je uit naar een nieuw begin in Nederland.
     Je hebt het gered!
     """)
-    Speel_opnieuw = input("Wil je het opnieuw spelen? Zoja type 'ja'\n>>> ")
-    if Speel_opnieuw == "ja":
-        os.system("cls")
-        intro()
-    else:
-        exit 
 #endregion goed einde
 #--------------------------------------------------------------------------------------------------------------------------------------------
 #region slecht einde: 2 Niet met de groep meegaan
@@ -412,12 +395,6 @@ def slecht_einde():
     Het was super heet en je zakte op de grond neer.
     Game over!
     """)
-    Speel_opnieuw = input("Wil je het opnieuw spelen? Zoja type 'ja'\n>>> ")
-    if Speel_opnieuw == "ja":
-        os.system("cls")
-        intro()
-    else:
-        exit 
 #endregion
 #--------------------------------------------------------------------------------------------------------------------------------------------
 #region goed einde: Met de groep naar Engeland gaan
@@ -440,9 +417,9 @@ def gaan():
         print(benodigheden)
         gaan()
 
+# ! Oplossing bedenken hoe ik hier het paspoort kan gebruiken !
 def Engeland():
-    print("""
-    Je besloot om met ze mee te gaan. 
+    print("""Je besloot om met ze mee te gaan. 
     Iedereen was super aardig en jullie stopte af en toe om even uit te rusten, te eten en te drinken.
     Toen jullie bij de grens waren, zagen jullie dat jullie door de douane heen moest.
     De groep ging splitsen, want sommige hadden geen paspoort bij zich.
@@ -467,6 +444,9 @@ def Engeland():
 #Groep met paspoort naar Engeland
 def langs_duane_paspoort():
     if paspoort:
+        print("Je hebt hier een paspoort voor nodig, selecteer een van de andere opties.")
+        Engeland()
+    else:
         print("""Gelukkig had je het paspoort thuis meegenomen, 
         je liet het paspoort zien en je kon veilig doorlopen.
         Je nam afscheid van de andere groep en had wel medelijden met ze.
@@ -523,17 +503,14 @@ def opgevangen_Engeland():
     toekomstbeeld_Engeland()
 
 def toekomstbeeld_Engeland():
-    print("""Na een jaar woonde je samen met een goede vriend die je had ontmoet tijdens de reis.
+    print("""
+    Na een jaar woonde je samen met een goede vriend die je had ontmoet tijdens de reis.
     Jullie werden goed geholpen door social worker 'Emily Patterson.'
     Je bewonderde haar en haar beroep en daarom wilde jij dit ook gaan doen.
     Je hebt het gered!
     """)
-    Speel_opnieuw = input("Wil je het opnieuw spelen? Zoja type 'ja'\n>>> ")
-    if Speel_opnieuw == "ja":
-        os.system("cls")
-        intro()
-    else:
-        exit 
+
+again = str(input())
 
 intro()
 #endregion
