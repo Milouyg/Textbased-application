@@ -2,7 +2,7 @@
 
 ## Wat is een is textbased application?
 
-Een tekstbased application/tekst game applicatie is een game waarbij je interactie hebt met de computer. De belangrijkste kenmerk aan tekst-based applicaties is dat je tekst signalen verstuurd en tekst signalen terug ontvangt (ook wel de input en output), zonder dat het geluid en een afbeelding heeft. Dit hoeft niet te betekenen dat tekst-based applicaties geen geluid en afbeeldingen hebben, maar het meer een bijzaak is i.p.v. een hoofdzaak.
+Een tekstbased application/tekst game applicatie is een game waarbij je interactie hebt met de computer. De belangrijkste kenmerk aan tekst-based applicaties is dat je tekst signalen verstuurd en tekst signalen terug ontvangt (ook wel de input en output), zonder dat het geluid en een afbeelding heeft. Dit hoeft niet te betekenen dat tekst-based applicaties geen geluid en afbeeldingen hebben, maar het is meer een bijzaak i.p.v. een hoofdzaak.
 
 ## Waar mijn Textbased application over gaat
 
