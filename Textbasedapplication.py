@@ -46,7 +46,7 @@ def intro():
     """)
     answer = input(">>> ")
     if answer in answer_A:
-        terug_vechten
+        terug_vechten()
     elif answer in answer_B:
         vluchten()
     else:
