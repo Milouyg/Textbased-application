@@ -9,7 +9,7 @@ def Leeftijd_controler():
         try:
             controle = int(leeftijd)
             if controle >= 16 :
-                print("Je mag het spel spelen, veel plezier! \nps. Wees eerlijk bij het invullen voor de beste ervaring")
+                print("Je mag het spel spelen, veel plezier! \nps. Wees eerlijk bij het invullen voor de beste ervaring\n")
                 break
             else:
                 print("Je mag het spel helaas niet spelen")
@@ -41,17 +41,14 @@ def intro():
     """)
     time.sleep(1)
     print("""Wat ga je doen? 
-    A) Niets doen 
-    B) Vluchten 
-    C) Terug vechten?
+    A) Vluchten 
+    B) Terug vechten?
     """)
     answer = input(">>> ")
     if answer in answer_A:
-        niets_doen()
+        terug_vechten
     elif answer in answer_B:
         vluchten()
-    elif answer in answer_C:
-        terug_vechten()
     else:
         print(benodigheden)
         intro()
@@ -60,10 +57,6 @@ def vluchten():
     print("""Je besluit te vluchten. 
     Weg van dit afschuwelijk leven.
     """)
-    Yebar()
-
-def niets_doen():
-    print("Je besluit net zoals alle andere dagen te bidden, hopen dat je de dag weer overleefd")
     Yebar()
 
 def terug_vechten():
