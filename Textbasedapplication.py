@@ -37,10 +37,10 @@ paspoort = False
 #region begin van het verhaallijn
 
 def intro():
-    print("""Je bent 16 jaar en werd uitgehuwelijkt aan de 36-jarige Yebar.
+    print("""Je bent 16 jaar en wordt uitgehuwelijkt aan de 36-jarige Yebar.
     Hij is de machtigste man in je geboorteland en is hoofdmilitair.
-    Sinds je bij hem woonde, was je leven een hell.
-    Hij heeft agressie problemen en je werd vaak mishandeld.
+    Sinds je bij hem woont, is je leven een hel.
+    Hij heeft agressie problemen en je wordt vaak mishandeld.
     Je was bang, maar besloot
     """)
     time.sleep(1)
@@ -50,39 +50,39 @@ def intro():
     """)
     answer = input(">>> ")
     if answer in answer_A:
-        terug_vechten()
-    elif answer in answer_B:
         vluchten()
+    elif answer in answer_B:
+        terug_vechten()
     else:
         print(benodigheden)
         intro()
 
 def vluchten():
     print("""Je besluit te vluchten. 
-    Weg van dit afschuwelijk leven.
+    Weg van dit afschuwelijke leven.
     """)
     Yebar()
 
 def terug_vechten():
-    print("""Je wilde dat het stopte en van binnen had je alle moed en kracht opgespaard.
+    print("""Je wilt dat het stopt en van binnen hebt je alle moed en kracht opgespaard.
     Dit wordt de dag dat alles anders gaat worden.
     """)
     Yebar()
 
 def Yebar():
-    print("""Yebar had je zoals altijd opgesloten in je kamer, 
-    wanneer hij weg moest. Vertelde hij nooit wat hij ging doen.
-    Toen hij weer weg moest, ging je 
+    print("""Yebar heeft je zoals gewoonlijk opgesloten in je kamer, 
+    wanneer hij weg gaat vertelt hij ook nooit wat hij gaat doen.
+    Toen hij weer weg ging, besluit je... 
     """)
     time.sleep(1)
     print("""Wat ga je doen?
-    A) Raam doorslaan
+    A) Raam inslaan
     B) Ontsnappen via de voordeur
     C) Op hem wachten
     """)
     answer = input(">>> ")
     if answer in answer_A:
-        Raam_Door_Slaan()
+        Raam_inslaan()
     elif answer in answer_B:
         Ontsnappen_via_deur()
     elif answer in answer_C:
@@ -95,11 +95,11 @@ def Yebar():
 
 #region slecht einde: Terugvechten 3 keuzes------------------------------------------------------------------------------------------------
 def op_hem_wachten():
-    print("""Je wachtte tot hij terugkwam. 
-    Dit was al best snel en je hoorde de dat de voordeur weer dicht gesmeten werd.
-    Je wist dat jij weer het doelwit zou worden en dat dit niet zonder geweld zou uitgepraat kon worden.
-    Je wilde verlost zijn van dit leven en je voelde opeens een hele sterke energie door je lichaam stromen.
-    Je wist dat praten niet zou werken, daarom bereidde je je voor op een gevecht.
+    print("""Je wacht tot hij terugkomt. 
+    Dit was al best snel en je hoort dat de voordeur weer dicht wordt gesmeten.
+    Je weet dat jij weer het doelwit zou worden en dat dit niet zonder geweld zou uitgepraat worden.
+    Je wilt verlost zijn van dit leven en je voelt opeens een hele sterke energie door je lichaam stromen.
+    Je weet dat praten niet zou werken, daarom bereidt je je voor op een gevecht.
     """)
     time.sleep(1)
     print("""Weet je zeker dat je dit wilt gaan doen?
@@ -110,8 +110,8 @@ def op_hem_wachten():
     if answer in answer_A:
         vechten_met_je_handen()
     elif answer in answer_B:
-        print("""Diep van binnen wist je toch dat je geen schijn van kanst maakte.
-        Hij was bijna 1,5 keer zo groot dan jij en hij was ook veel gespierde.
+        print("""Diep van binnen weet je toch dat je geen schijn van kans maakt.
+        Hij is bijna 1,5 keer zo groot dan jij en hij was ook veel gespierder.
         """)
         vaas()
     else:
@@ -120,10 +120,10 @@ def op_hem_wachten():
 
 
 def vechten_met_je_handen():
-    print("""Je wachtte tot hij dichtbij naderde en liet hem struikelen.
-    Je pakte hem bij zijn nek en zei dat dit nu moest ophouden.
+    print("""Je wacht totdat hij dichtbij komt en je laat hem struikelen.
+    Je pakt hem bij zijn nek en zegt dat dit nu moet ophouden.
     Even dacht je dat het lukte, maar hij wierp je overeind. 
-    Hij kneep je kil dicht en alles werd zwart voor je ogen. 
+    Hij knijpt jouw keel dicht, alles wordt zwart voor je ogen. 
     Game over!
     """)
     Speel_opnieuw = input("Wil je het opnieuw spelen? Zoja type 'ja'\n>>> ")
@@ -134,8 +134,10 @@ def vechten_met_je_handen():
         exit 
 
 def vaas():
-    print(""""Je pakte een vaas dat op je nachtkastje stond en wachtte op hem.
-    Toen hij de deur opendeed, gooide je de bloempot tegen zijn hoofd aan en rende je het huis uit.
+    print(""""Je pakt een vaas dat op je nachtkastje staat en wacht op hem.
+    Je hoort voetstappen op de trap lopen en je hoort dat hij je naam roept.
+    Je blijft stil en toen hij de deur open ging doen, gooide je een vaas tegen zijn hoofd aan.
+    Je rent zo snel mogelijk het uit huis.
     """)
     time.sleep(1)
     print("""Waar vlucht je naartoe?
@@ -155,10 +157,9 @@ def vaas():
 
 #region goed einde: Vluchten en met de vreemdeling meegaan 
 
-def Raam_Door_Slaan():
-    print("""Je sloeg het raam kapot en klom naar buiten.
-    Toen je op de grond stond, hoorde je Yebar.
-    Je vluchtte zo snel mogelijk weg van je huis.
+def Raam_inslaan():
+    print("""Je ging het raam inslaan en klimt naar buiten.
+    Dit voelt opeens weer zo gek. Je bent al maanden het huis niet uitgeweest en nu sta je gewoon buiten.
     """)
     time.sleep(1)
     print("""Waar vlucht je naartoe?
@@ -172,13 +173,13 @@ def Raam_Door_Slaan():
         Ergens_naartoe_rennen()
     else:
         print(benodigheden)
-        Raam_Door_Slaan()
+        Raam_inslaan()
 
 def Ontsnappen_via_deur():
     global paspoort
-    print("""Je zocht een manier om de deur open te krijgen.
-    Toen je aan je haar krabbelde, voelde je een speltje in je haar.
-    Je probeerde met het speltje de deur open te krijgen en het lukte!
+    print("""Je zoekt een manier om de deur open te krijgen.
+    Je krabbelde aan je haar en voelt een speltje.
+    ja, dit is het! Je probeert met het speltje de deur open te krijgen en het lukt!
     """)
     time.sleep(1)
     print(""" Wat ga je nu doen?
@@ -195,21 +196,21 @@ def Ontsnappen_via_deur():
         huis_doorzoeken()
 
 def huis_uitvluchten():
-    print("""Je rende naar de voordeur, helaas was die op slot. 
-    Je zocht paniekerig een sleutel, alleen dat was nergens te bevinden.
+    print("""Je rent naar de voordeur, helaas zit die op slot. 
+    Je zoekt paniek de sleutel, alleen die was nergens te bekennen.
     """)
     Yebar_thuis()
 
 def huis_doorzoeken():
-    print("""Je doorzocht het huis angstig en vond in een kastje een paspoort van jezelf.
-    Die stopte je in je broek.
+    print("""Je doorzoekt het huis angstig en vindt in een kastje een paspoort van jezelf.
+    Je pakt snel het paspoort en stopt 't in je broek.
     """)
     print(paspoort)
     Yebar_thuis()
 
 def Yebar_thuis():
-    print("""Je hoorde opeens de sleutel van de voordeur. 
-    Yebar kwam thuis!
+    print("""Je hoort opeens de sleutel van de voordeur. 
+    Yebar komt thuis!
     """)
     time.sleep(1)
     print("""Wat nu?!
@@ -218,7 +219,7 @@ def Yebar_thuis():
     """)
     answer = input(">>> ")
     if answer in answer_A:
-        Raam_Door_Slaan()
+        Raam_inslaan()
     elif answer in answer_B:
         verstoppen_keuken()
     else:
@@ -226,11 +227,12 @@ def Yebar_thuis():
         Yebar_thuis()
 
 def verstoppen_keuken():
-    print("""Met je hart in je keel verstopte je in de keuken kastje. 
-    Je hoorde dat Yebar weer een woedenaanval had en sloeg keihard op het kastje waarin je verstop zat.
-    Je schrok ervan en bonkte per ongeluk met je hoofd tegen de bovenkant aan. Yebar merkte dit op en had je gevonden.
-    Hij werd nog bozer en smeet je op de grond. 
-    Je dacht dat dit het einde was en keek opzij. Je zag een mes liggen.
+    print("""Met je hart in je keel verstop je je in de keuken kastje. 
+    Je hoort dat Yebar weer een woedenaanval heeft en hij sloeg keihard op het kastje waarin je verstop zat.
+    Je schrok ervan en bonkte per ongeluk met je hoofd tegen de bovenkant aan. Yebar merkt dit op en je zag de keukendeurtjes opengaan.
+    Hij pakt je bij je arm en smeet je op de grond.
+    "Wat doe jij hier!" zei hij en je zag zijn hoofd rood worden.
+    Dit wordt mijn einde dacht je, je kijkt opzij en zag een mes.
     """)
     time.sleep(1)
     print("""Probeer je het mes te pakken?
@@ -247,8 +249,8 @@ def verstoppen_keuken():
         verstoppen_keuken()
 
 def mes_pakken():
-    print("""Je kon nog net het mes pakken en hield het angstig voor je.
-    Vuur brandde in zijn ogen en hij schold je helemaal verrot.
+    print("""Je kan nog net het mes pakken en houdt het angstig voor je.
+    Vuur brandt in zijn ogen en hij schold je helemaal verrot.
     Hij dreigde als je het mes niet weglegde, dit het einde was.
     """)
     time.sleep(1)
@@ -267,11 +269,11 @@ def mes_pakken():
 
 #Slechtte keuze in het onderdeel huis
 def Niet_neersteken():
-    print("""Je legde het mes weg. 
-    Zo ben jij niet en god zou je hiervoor nooit vergeven.
-    Yebar stormde op je af en je wist dat dit het einde was.
-    Je hoofd kreeg een paar klappen tegen de vloer aan en je verloor je bewustzijnde. 
-    Alles werd zwart voor jouw ogen. Ten minste ben ik nu verlost van dit leven...
+    print("""Je legt het mes weg. 
+    Zo ben jij niet en god zou je hiervoor ook nooit vergeven.
+    Yebar komt op je af gestormd en je weet dat dit het einde is.
+    Je hoofd krijgt een paar klappen tegen de vloer aan en je verliest je bewustzijnde. 
+    Alles wordt zwart voor jouw ogen. Ten minste ben ik nu verlost van dit leven...
     Game over!
     """)
     Speel_opnieuw = input("Wil je het opnieuw spelen? Zoja type 'ja'\n>>> ")
@@ -283,11 +285,11 @@ def Niet_neersteken():
 #--------------------------------
 
 def Neersteken():
-    print("""Je hield het mes stevig vast en dreigde tegen hem dat je het mes zou gebruiken als hij nog 1 stap dichterbij kwam.
-    Hij luisterde niet en kwam woedend op je afgerend.
-    Je ontweek zijn aanval en zonder er bij na te denken stak je hem neer.
-    Bloed druppelde op de grond en je kon even niet helder meer nadenken.
-    Je hoorde mensen bij de voordeur. Je verzamelde alle moed bij elkaar en vluchtte.
+    print("""Je houdt het mes stevig vast en zegt "als je nog 1 stap dichterbij komt, gebruikt ik dit mes."
+    Hij ging niet luisteren en komt woedend op je afgerend.
+    Je ontwijkt zijn aanval en zonder er bij na te denken steek je 'm neer.
+    Bloed druppelt op de grond en je kan even niet helder meer nadenken.
+    Je hoort mensen bij de voordeur. Je verzamelt alle moed bij elkaar en ging vuchten.
     """)
     time.sleep(1)
     print("""Waar ga je naartoe
@@ -304,16 +306,16 @@ def Neersteken():
         mes_pakken
 
 def familie():
-    print("""Je rende naar je ouders huis toe en vertelde huilend wat er was gebeurd.
-    Je moeder was geschokt, maar zei dat je hier niet meer veilig was. 
-    Ze gaf je een knuffel en je vluchtte maar ergens naartoe.
+    print("""Je rent naar je ouders huis toe en vertelt huilend wat er gebeurd is.
+    Je moeder was geschokt, maar ze zegt dat je hier niet meer veilig bent, al helemaal niet als je vader hier achter komt. 
+    Ze gaf je een stevige knuffel en je ging maar ergens naartoe vluchten.
     """)
     vreemdeling()
 
 def Ergens_naartoe_rennen():
-    print("""Als een kip zonder kop rende je maar ergens naartoe. 
-    Je voelde je verloren en je vroeg jezelf af of je toch beter je familie ten hulp kon vragen.
-    Je wist alleen niet wat je vader zou doen, aangezien hij juist wilde dat jij met Yebar zou trouwen.
+    print("""Als een kip zonder kop ren je maar ergens naartoe. 
+    Je voelt je verloren en je vroeg jezelf af of je toch beter je familie ten hulp kon vragen.
+    Je weet alleen niet wat je vader zou doen, aangezien hij juist wilde dat jij met Yebar zou gaan trouwen.
     """)
     vreemdeling()
 
@@ -334,10 +336,10 @@ def vreemdeling():
         vreemdeling()
 
 def liegen():
-    print("""Je zei dat hij zich vergist.
-    De man twijfelde, maar vertelde toen dat hij naar Nederland gaat.
-    Hij vroeg wat jij ging doen en jij loog ook dat je opweg was naar Nederland.
-    Hij vroeg toen of je met hem mee wilt gaat
+    print("""Je zegt dat hij zich vergist.
+    Je ziet de man twijfelen, maar hij zei toen dat hij naar Nederland gaat.
+    Hij vraagt wat jij hierzo doet en jij loog ook dat je opweg was naar Nederland.
+    Hij vraagt of je met hem mee wilt gaan.
     """)
     time.sleep(1)
     print("""Ga je met de vreemdeling mee?
@@ -354,16 +356,16 @@ def liegen():
         liegen()
 
 def met_vreemdeling_meegaan():
-    print("""Dit was de enige manier dat je kon bedenken om veilig te kunnen ontsnappen.
-    Je besloot met hem mee te gaan.
+    print("""Dit is de enige manier dat je kan bedenken om veilig te kunnen ontsnappen.
+    Je besluit met hem mee te gaan.
     """)
     gered()
 
 def gered():
-    print("""Je kwam op je eind bestemming en je zag eindelijk weer een beetje hoop in je leven.
-    Je wilde opnieuw beginnen met je leven en daarom besloot je je identiteit te veranderen.
-    Je had ook nog contact opgezocht met je ouders en waarbij je had verteld dat je veilig was.
-    Ondanks deze traumatische gebeurtenis, keek je uit naar een nieuw begin in Nederland.
+    print("""Je komt op je eind bestemming en je ziet eindelijk weer een beetje hoop in je leven.
+    Je wilt opnieuw beginnen met je leven en daarom besluit je je identiteit te veranderen.
+    Ook wil je nog contact opzoeken met je moeder om te vertellen dat je veilig bent.
+    Ondanks deze traumatische gebeurtenis, kijk je uit naar een nieuw begin in Nederland.
     Je hebt het gered!
     """)
     Speel_opnieuw = input("Wil je het opnieuw spelen? Zoja type 'ja'\n>>> ")
@@ -376,17 +378,17 @@ def gered():
 #--------------------------------------------------------------------------------------------------------------------------------------------
 #region slecht einde: 2 Niet met de groep meegaan
 def waarheid_vertellen():
-    print(""" Je vertelde de waarheid, maar dat je op de vlucht van hem was.
-    Je smeekte hem om zijn hulp, de man keek je met grote ogen aan
-    en vertelde dat Yebar de machtigste man van ons geboorteland was.
-    Hij wilde hier niks mee te maken hebben en liep snel weg.
+    print(""" Je vertelt de waarheid, maar dat je op de vlucht van hem was.
+    Je smeekt hem om zijn hulp, de man kijkt je met grote ogen aan
+    en vertelt dat Yebar de machtigste man van ons geboorteland was.
+    Hij wilt hier niks mee te maken hebben en hij liep snel weg.
     """)
     time.sleep(1)
     groep_mensen()
 
 def groep_mensen():
-    print("""Je wist niet wat je moest doen en vluchtte de stad uit.
-    In de verte zag je een groep mensen. 
+    print("""Je weet niet wat je moet doen en vlucht de stad uit.
+    In de verte zie je een groep mensen. 
     """)
     time.sleep(1)
     print("""Ga je er naartoe?
@@ -403,13 +405,13 @@ def groep_mensen():
         groep_mensen()
     
 def niet_gaan():
-    print("Je vertrouwde niemand meer en probeerde in je eentje te overleven")
+    print("Je vertrouwt niemand meer en probeert in je eentje te overleven")
     slecht_einde()
 
 def slecht_einde():
-    print("""Je was verdwaald, je had honger en dorst.
-    Na nog uren lopen vond je nog niks
-    Het was super heet en je zakte op de grond neer.
+    print("""Je weet niet waar je bent en je hebt honger en dorst.
+    Na nog uren lopen vindt je nog niks.
+    Het is super heet en je zakt op de grond neer.
     Game over!
     """)
     Speel_opnieuw = input("Wil je het opnieuw spelen? Zoja type 'ja'\n>>> ")
@@ -422,14 +424,14 @@ def slecht_einde():
 #--------------------------------------------------------------------------------------------------------------------------------------------
 #region goed einde: Met de groep naar Engeland gaan
 def gaan():
-    print("""Je liep op de groep mensen af en zag dat ze vol belanden waren met spullen.
-    Je vroeg waar ze naartoe gingen en ze zeiden dat ze opweg waren naar Engeland.
-    Ze vroegen of je met ze mee wilde gaan.
+    print("""Je stap op de groep mensen af en ziet dat ze vol beladen met spullen zijn.
+    Je vraagt waar ze naartoe gaan en ze zeiden dat ze opweg naar Engeland zijn.
+    "Wil je met ons mee gaan?" vroegen ze en je zei:
     """)
     time.sleep(1)
     print("""Ga je met ze mee naar Engeland?
-    A) Ja 
-    B) Nee
+    A) Natuurlijk ga ik mee!
+    B) Dat is heel aardig van jullie, maar ik reis alleen.
     """)
     answer = input(">>> ")
     if answer in answer_A:
@@ -442,17 +444,18 @@ def gaan():
 
 def Engeland():
     print("""
-    Je besloot om met ze mee te gaan. 
-    Iedereen was super aardig en jullie stopte af en toe om even uit te rusten, te eten en te drinken.
-    Toen jullie bij de grens waren, zagen jullie dat jullie door de douane heen moest.
-    De groep ging splitsen, want sommige hadden geen paspoort bij zich.
+    Je was heel erg blij dat je met ze mee bent gegaan, want iedereen was super aardig.
+    Heel af en toe had je een kleine rust pauze, om te eten en te drinken, maar daarna gingen jullie weer gauw door.
+    Na enkele uren lopen zie je dat je bij de grens aankomt en je weet dat daar douanes zijn.
+    Omdat sommige leden van de groep geen paspoort bij zich hebben, gingen jullie splitsen.
+    jij ging:
     """)
     time.sleep(1)
     print("""Wat ga je doen?
     A) Langs de douane proberen te sneaken
     B) Met de rest van de groep meegaan die ook geen paspoort hebben""")
     if paspoort: 
-        print("C) Ik ga langs de douane, want ik heb een paspoort bij me")
+        print("C) langs de douane, want je hebt een paspoort bij je")
     answer = input(">>> ")
     if answer in answer_A:
         langs_douane_sneaken()
@@ -467,36 +470,36 @@ def Engeland():
 #Groep met paspoort naar Engeland
 def langs_duane_paspoort():
     if paspoort:
-        print("""Gelukkig had je het paspoort thuis meegenomen, 
-        je liet het paspoort zien en je kon veilig doorlopen.
-        Je nam afscheid van de andere groep en had wel medelijden met ze.
-        Je hoopte voor ze dat zij het ook zouden gaan redden.
+        print("""Gelukkig hebt je het paspoort thuis meegenomen.
+        Jullie gingen afscheid nemen van de andere groep, je had wel medelijden met ze en je hoopte dat zij ook veilig aan zouden komen.
+        Zenuwachtig loop je richting de douane en liet je het paspoort zien, de douane knikte naar je en je mocht veilig doorlopen.
         """)
         vliegtuig()
 
 def vliegtuig():
-    print("""Jullie vlogen met het vliegtuig naar Nederland.
-    Het was een lange en zware reis, maar je had het overleefd.
-    Ook had je tijdens dit avontuur, goede connecties gemaakt met de groep die ook het land uitvluchtte.
+    print("""Na uren wachten mag je eindelijk het vliegtuig in.
+    Het vliegtuig ging naar Nederland vliegen.
+    Het is een lange en zware reis geweest, maar je hebt het overleefd.
+    Ook hebt je tijdens dit avontuur, goede connecties gemaakt.
     """)
     toekomstbeeld_Engeland()
 
 #groep zonder paspoort over zee naar Engeland
 def groep_zonder_paspoort():
-    print("Je liep naar de andere groep toe.")
+    print("Je loopt naar de andere groep toe.")
     overzee()
 
 def langs_douane_sneaken():
-    print(""""Je probeerde langs de douane te sneaken.
-    Helaas hadden ze je opgemerkt en werd je weggestuurd. 
-    Je liep naar de andere groep toe
+    print(""""Je probeert langs de douane te sneaken.
+    Helaas zien ze je en je bent even bang dat je gevangen genomen zou worden, maar je wordt gewoon weggestuurd.
+    Je loopt naar de andere groep toe.
     """)
     overzee()
 
 def overzee():
-    print("""De groep was van plan om over zee te gaan in de hoop dat ze gevonden worden.
-    Jullie zaten dagen dicht op elkaar in een bootje van 9 bij 6 meter.
-    Na bijna 7 dagen zag je een boot in de verte.
+    print("""De groep is van plan om over zee te gaan in de hoop dat ze gevonden worden.
+    Jullie zitten dagen lang dicht op elkaar in een bootje van 9 bij 6 meter.
+    Je wordt wakker omdat de boot heel erg hard begon te wiebelen, je probeert te kijken waardoor dit komt en je ziet licht in de verte.
     """)
     time.sleep(1)
     print("""Wat ga je doen?
@@ -505,11 +508,12 @@ def overzee():
     """)    
     answer = input(">>> ")
     if answer in answer_A:
-        print("Je riep zo hard als je kon, toen de andere het ook opmerkte riepen jullie gezamelijk")
+        print("Je roept zo hard als je kon, toen de andere de boot ook zagen, riepen jullie gezamelijk.")
         opgevangen_Engeland()
     elif answer in answer_B:
-        print("""Je vond het akward om als enige te roepen.
-        Doordat er golvenkwamen, merkte de andere het ook op en riepen voor hulp.
+        print("""Je vindt het akward om als enige te roepen.
+        Je ziet dat de andere ook wakker worden en toen ze om zich heen gingen kijken, zagen ze ook de boot. 
+        Ze gingen gelijk roepen voor hulp.
         """)
         opgevangen_Engeland()
     else:
@@ -517,15 +521,17 @@ def overzee():
         overzee()
 
 def opgevangen_Engeland():
-    print(""" De boot zag jullie en jullie werden door de boot opgenomen.
-    De boot ging richting Engeland en jullie werden daar opgevangen.
-    Eindelijk was de nachtmerrie voorbij en kon je een nieuw leven opbouwen.""")
+    print(""" Er wordt op jullie geschenen met een licht en de boot komt jullie kant op.
+    Toen de boot dichtbij jullie was, werden jullie opgenomen.
+    De boot gaat richting Engeland en daar zouden jullie worden opgevangen.
+    EIndelijk is de nachtmerrie voorbij en kan je een nieuw leven opbouwen.
+    """)
     toekomstbeeld_Engeland()
 
 def toekomstbeeld_Engeland():
-    print("""Na een jaar woonde je samen met een goede vriend die je had ontmoet tijdens de reis.
-    Jullie werden goed geholpen door social worker 'Emily Patterson.'
-    Je bewonderde haar en haar beroep en daarom wilde jij dit ook gaan doen.
+    print("""Na een jaar hebt je een eigen huis en woon je samen met je vriend "Shahin" die je tijdens de reis hebt ontmoet.
+    Jullie worden nog goed geholpen door social worker 'Emily Patterson.'
+    Je bewondert haar en haar beroep zo erg en daarom wil jij hier ook je beroep van maken.
     Je hebt het gered!
     """)
     Speel_opnieuw = input("Wil je het opnieuw spelen? Zoja type 'ja'\n>>> ")
