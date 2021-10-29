@@ -159,7 +159,7 @@ def vaas():
 
 def Raam_inslaan():
     print("""Je ging het raam inslaan en klimt naar buiten.
-    Dit voelt opeens weer zo gek. Je bent al maanden het huis niet uitgeweest en nu sta je gewoon buiten.
+    Dit voelt opeens weer zo gek. Je bent al maanden het huis niet uit geweest en nu sta je gewoon buiten.
     """)
     time.sleep(1)
     print("""Waar vlucht je naartoe?
@@ -338,7 +338,7 @@ def vreemdeling():
 def liegen():
     print("""Je zegt dat hij zich vergist.
     Je ziet de man twijfelen, maar hij zei toen dat hij naar Nederland gaat.
-    Hij vraagt wat jij hierzo doet en jij loog ook dat je opweg was naar Nederland.
+    Hij vraagt wat jij hierzo doet en jij loog ook dat je op weg was naar Nederland.
     Hij vraagt of je met hem mee wilt gaan.
     """)
     time.sleep(1)
