@@ -6,7 +6,7 @@ Een tekstbased application/tekst game applicatie is een game waarbij je interact
 
 ## Waar mijn Textbased application over gaat
 
-Mijn textbased application gaat over een vrouwelijke vluchteling die probeert te vluchten van haar echtgenoot "Yebar". Hierbij moet jij moeilijke keuzes maken om haar leven te redden. Bij een verkeerde keuze kan dit voor haar ernstige gevolgen hebben. Het verhaal heeft meer dan 21 keuzes en 6 verschillende einden, waarbij je 3 goede eindes hebt en 3 fouten.
+Mijn textbased application gaat over een vrouwelijke vluchteling die probeert te vluchten van haar echtgenoot "Yebar". Hierbij moet jij moeilijke keuzes maken om haar leven te redden. Bij een verkeerde keuze kan dit voor haar ernstige gevolgen hebben. Het verhaal heeft meer dan 21 keuzes en 6 verschillende einden, waarbij je 3 goede eindes hebt en 3 fouten. [klik hier voor het verhaal](https://github.com/Milouyg/Textbased-application/blob/main/Textbased%20application%20verhaallijn.docx)
 
 ## Hoe heb ik dit gemaakt?
 
