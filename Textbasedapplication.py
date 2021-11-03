@@ -178,8 +178,8 @@ def Raam_inslaan():
 def Ontsnappen_via_deur():
     global paspoort
     print("""Je zoekt een manier om de deur open te krijgen.
-    Je krabbelde aan je haar en voelt een speltje.
-    ja, dit is het! Je probeert met het speltje de deur open te krijgen en het lukt!
+    Je krabbelde aan je haar en voelt een speldje.
+    ja, dit is het! Je probeert met het speldje de deur open te krijgen en het lukt!
     """)
     time.sleep(1)
     print(""" Wat ga je nu doen?
@@ -228,11 +228,11 @@ def Yebar_thuis():
 
 def verstoppen_keuken():
     print("""Met je hart in je keel verstop je je in de keuken kastje. 
-    Je hoort dat Yebar weer een woedenaanval heeft en hij sloeg keihard op het kastje waarin je verstop zat.
+    Je hoort dat Yebar weer een woedeaanval heeft en hij sloeg keihard op het kastje waarin je verstop zat.
     Je schrok ervan en bonkte per ongeluk met je hoofd tegen de bovenkant aan. Yebar merkt dit op en je zag de keukendeurtjes opengaan.
     Hij pakt je bij je arm en smeet je op de grond.
-    "Wat doe jij hier!" zei hij en je zag zijn hoofd rood worden.
-    Dit wordt mijn einde dacht je, je kijkt opzij en zag een mes.
+    "Wat doe jij hier?!" zei hij en je zag zijn hoofd rood worden.
+    Dit word mijn einde dacht je, je kijkt opzij en ziet een mes liggen.
     """)
     time.sleep(1)
     print("""Probeer je het mes te pakken?
@@ -250,8 +250,8 @@ def verstoppen_keuken():
 
 def mes_pakken():
     print("""Je kan nog net het mes pakken en houdt het angstig voor je.
-    Vuur brandt in zijn ogen en hij schold je helemaal verrot.
-    Hij dreigde als je het mes niet weglegde, dit het einde was.
+    Vuur brandt in zijn ogen en hij scheldt je helemaal verrot.
+    Hij dreigde als je het mes niet weglegde, dit het einde van je was.
     """)
     time.sleep(1)
     print("""Leg je het mes weg?
@@ -289,7 +289,7 @@ def Neersteken():
     Hij ging niet luisteren en komt woedend op je afgerend.
     Je ontwijkt zijn aanval en zonder er bij na te denken steek je 'm neer.
     Bloed druppelt op de grond en je kan even niet helder meer nadenken.
-    Je hoort mensen bij de voordeur. Je verzamelt alle moed bij elkaar en ging vuchten.
+    Je hoort mensen bij de voordeur. Je verzamelt alle moed bij elkaar en ging vluchten.
     """)
     time.sleep(1)
     print("""Waar ga je naartoe
