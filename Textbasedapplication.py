@@ -490,7 +490,7 @@ def groep_zonder_paspoort():
     overzee()
 
 def langs_douane_sneaken():
-    print(""""Je probeert langs de douane te sneaken.
+    print("""Je probeert langs de douane te sneaken.
     Helaas zien ze je en je bent even bang dat je gevangen genomen zou worden, maar je wordt gewoon weggestuurd.
     Je loopt naar de andere groep toe.
     """)
@@ -508,7 +508,7 @@ def overzee():
     """)    
     answer = input(">>> ")
     if answer in answer_A:
-        print("Je roept zo hard als je kon, toen de andere de boot ook zagen, riepen jullie gezamelijk.")
+        print("Je roept zo hard als je kon, toen de andere de boot ook zagen, riepen jullie gezamelijk.\n")
         opgevangen_Engeland()
     elif answer in answer_B:
         print("""Je vindt het akward om als enige te roepen.
@@ -524,7 +524,7 @@ def opgevangen_Engeland():
     print(""" Er wordt op jullie geschenen met een licht en de boot komt jullie kant op.
     Toen de boot dichtbij jullie was, werden jullie opgenomen.
     De boot gaat richting Engeland en daar zouden jullie worden opgevangen.
-    EIndelijk is de nachtmerrie voorbij en kan je een nieuw leven opbouwen.
+    Eindelijk is de nachtmerrie voorbij en kan je een nieuw leven opbouwen.
     """)
     toekomstbeeld_Engeland()
 
